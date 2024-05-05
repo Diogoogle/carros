@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(27,27,27);
+}
+
+p{
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.card-image{
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+    align-self: center;
+    margin:10px;
+    border-radius: 15px;
+    
+}
+
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;/*retira o sublinhado do hiperlink*/
+}
+
+.card:hover{/*efeito quando o mouse passar por cima*/
+    background-color: rgb(62,62,62);
+    color: white; /*muda a cor do texto*/
+    cursor: pointer;
+    transform: scale(1.03);/*muda a escala do elemento*/
+    transition: all 0.2s ease;
+}
